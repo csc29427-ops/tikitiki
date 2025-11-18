@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+
+    <style>
+        body {
+        font-family: Arial, sans-serif;
+        padding: 40px;
+        background-image: url('./fondo.jpg'); 
+        background-size: cover;              
+        background-position: center;         
+        background-repeat: no-repeat;       
+        background-attachment: fixed;       
+
+        }
+
+        .contenedor {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);  
+            gap: 40px;
+        }
+
+        .tarjeta {
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+            padding: 20px;
+            border: 1px solid #000;
+            background: white;
+        }
+
+        .tarjeta img {
+            width: 210px;
+            height: 150px;
+            border: 1px solid black;
+            object-fit: cover;
+        }
+
+        .info p {
+            margin: 8px 0;
+            font-size: 10px;
+            
+        }
+
+        .info b {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+   <center><h1 style="margin-bottom: 30px;">CVlandia</h1></center> 
+
+    <div class="contenedor">
+
+        <!-- TARJETA 1 -->
+        <div class="tarjeta">
+            <img src="./edwino.JPG" alt="Imagen 1">
+            <div class="info">
+                <p><b>Nombre:Ing.Edwin Hernández Vázquez</b> </p>
+                <p><b>Sexo:Masculino</b> </p>
+                <p><b>Carrera:Ing.TDSM</b> </p>
+                <p><b>Experiencia profesional: En administración de bases de datos MySQL y MongoDB, así como en la configuración de redes y servidores con MikroTik RouterOS.
+                     Se especializa en el diseño de soluciones tecnológicas orientadas a la gestión de clientes, el control de servicios y la optimización de procesos.
+                    Además, cuenta con habilidades en docencia y elaboración de material académico, lo que le permite facilitar la comprensión de temas complejos en tecnología y computación. 
+                    Su enfoque combina la parte técnica con la pedagógica, aportando valor tanto en proyectos prácticos como en entornos de formación.</b> </p>
+            </div>
+        </div>
+
+        <!-- TARJETA 2 -->
+        <div class="tarjeta">
+            <img src="./osc.jpg" alt="Imagen 2">
+            <div class="info">
+                <p><b>Nombre:Ing.Oscar Morales Barranco</b> </p>
+                <p><b>Sexo:Masculino</b> </p>
+                <p><b>Carrera:Ing.TDSM</b> </p>
+                <p><b>Experiencia profesional: En el desarrollo de soluciones IoT, trabajando con sensores y microcontroladores.
+                    Domina lenguajes de programación como JavaScript,php y C++ para la automatización de procesos 
+                    y la comunicación entre hardware y software.</b> </p>
+            </div>
+        </div>
+
+        <!-- TARJETA 3 -->
+        <div class="tarjeta">
+            <img src="./jisus.jpg" alt="Imagen 3">
+            <div class="info">
+                <p><b>Nombre: Ing.Jesus Emmanuel Ramírez Bravo</b> </p>
+                <p><b>Sexo:Masculino</b> </p>
+                <p><b>Carrera:Ing.TSDM</b> </p>
+                <p><b>Experiencia profesional: Tiene experiencia en desarrollo de software multiplataforma,
+                    programación en JavaScript,Python y HTML así como el manejo de bases de datos
+                    MySQL y MOngo DB. Cuenta con conocimientos en IoT y uso de microcontroladores como Arduino.
+                </b> </p>
+            </div>
+        </div>
+
+        <!-- TARJETA 4 -->
+        <div class="tarjeta">
+            <img src="./jelipe.jpg" alt="Imagen 4">
+            <div class="info">
+                <p><b>Nombre: Ing.Edgar Felipe Cabañas Gutierrez </b> </p>
+                <p><b>Sexo:Masculino</b> </p>
+                <p><b>Carrera:Ing.TDSM</b> </p>
+                <p><b>Experiencia profesional:Tiene experiencia en desarrollo de software multiplataforma,
+                    programación en JavaScript,Python y HTML así como el manejo de bases de datos
+                    MySQL y MOngo DB. Cuenta con conocimientos en IoT y uso de microcontroladores como Arduino.
+                    A demas, cuenta con experiencia en instalación de cámaras de seguridad.
+                </b> </p>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

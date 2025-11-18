@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesión</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            background-image: url("./chango.jpg"); /* ← pon aquí tu imagen */
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .contenedor {
+            width: 350px;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.15); /* TRANSPARENTE */
+            backdrop-filter: blur(6px); /* efecto vidrio */
+            border-radius: 15px;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .contenedor h2 {
+            color: white;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        input {
+            width: 90%;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 8px;
+            border: none;
+            outline: none;
+        }
+
+        button {
+            width: 90%;
+            padding: 12px;
+            margin-top: 15px;
+            background: #6c9d73;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #26e940;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="contenedor">
+        <h2>Acceso</h2>
+
+        <input type="text" id="usuario" placeholder="Usuario">
+        <input type="password" id="password" placeholder="Contraseña">
+
+        <button onclick="validar()">Acceder</button>
+    </div>
+
+    <script>
+        function validar() {
+            let user = document.getElementById("usuario").value;
+            let pass = document.getElementById("password").value;
+
+            // Puedes cambiar estos datos por los que tú quieras
+            let usuarioCorrecto = "Bartolito";
+            let contraseñaCorrecta = "0406";
+
+            if (user === usuarioCorrecto && pass === contraseñaCorrecta) {
+                window.location.href = "CV.html"; // ← siguiente página
+            } else {
+                alert("Usuario o contraseña incorrectos");
+            }
+        }
+    </script>
+
+</body>
+</html>
